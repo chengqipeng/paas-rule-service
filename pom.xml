@@ -18,6 +18,7 @@
     </properties>
     <modules>
         <module>paas-rule-service-core</module>
+        <module>paas-rule-service-feign</module>
         <module>paas-rule-service-server</module>
     </modules>
     <dependencyManagement>
@@ -26,6 +27,7 @@
             <dependency><groupId>com.hongyang</groupId><artifactId>framework-redis</artifactId><type>pom</type><scope>import</scope><version>${framework-redis-import.version}</version></dependency>
             <dependency><groupId>com.hongyang</groupId><artifactId>framework-mq</artifactId><type>pom</type><scope>import</scope><version>${framework-mq-import.version}</version></dependency>
             <dependency><groupId>com.hongyang.platform</groupId><artifactId>paas-rule-service-core</artifactId><version>${revision}</version></dependency>
+            <dependency><groupId>com.hongyang.platform</groupId><artifactId>paas-rule-service-feign</artifactId><version>${revision}</version></dependency>
             <dependency><groupId>com.hongyang.platform</groupId><artifactId>paas-metarepo-service-core</artifactId><version>${paas-metarepo-service.version}</version></dependency>
         </dependencies>
     </dependencyManagement>
